@@ -1,0 +1,121 @@
+.container{
+    /* max-width: 1140px; */
+    padding: 0px 0px 0px 65px;
+}
+.namaz-time img {
+    position: relative;
+}
+.namaz-time {
+    display: flex;   
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 270px;
+    padding-top: 36px;
+    border: 1px solid #bcbcbc;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 151px;
+    padding-bottom: 100px;
+    position: relative;
+    background-image: url("../assets/color-bg.jpg");
+    overflow: hidden;
+    margin-left: -1px;
+    margin-bottom: 100px;
+}
+.namaz-timing {
+    display: flex;
+    align-items: center;
+    
+}
+.namaz-time:before {
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .4s ease-in-out;
+}
+.namaz-time:after {
+    left: 44%;
+    bottom: 40px;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #fbc50b;
+}
+.namaz-time h4 {
+    color: #007d3a;
+    font-family: 'Sawarabi Mincho';
+    font-size: 36px;
+    
+    padding-top: 6px;
+    padding-bottom: 20px;
+   
+    position: relative;
+}
+.namaz-time  span {
+    position: relative;
+    display: block;
+   
+    font-size: 16px;
+    padding-top: 4px;
+}
+.namaz-time h5 {
+    position: relative;
+    font-size: 20px;
+}
+.namaz-time:hover:before {
+            bottom: 0;
+            height: 0;
+}
+.namaz-time:hover h5 ,.namaz-time:hover h4,.namaz-time:hover span  {
+    color: #fff;
+}
+.heading{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.heading p{
+    color: #444;
+    padding-top: 24px;
+    font-size: 18px;
+    font-family: 'Sawarabi Mincho';
+    text-transform: uppercase;
+}
+.heading h2{
+font-size: 50px;
+    font-family: 'Sawarabi Mincho';
+    letter-spacing: 2px;
+}
+.heading img{
+    display: block;
+    margin: 0 auto;
+    
+}
+.isl-hist p{
+    color: #444;
+    width: 35%;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+.circle-img{
+    width: 194px;
+    height: 194px;
+    background-color:#fbc50b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: auto;
+}
+.circle{
+   animation:rotate 2s infinite;
+}

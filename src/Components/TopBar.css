@@ -1,0 +1,79 @@
+.vl{
+    margin-right: 10px;
+    margin-left: 10px;
+    
+    transform: translateY(-10% );
+    
+
+    
+}
+
+.social-links {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  gap: 10px;
+}
+.icon-fb:hover{
+ color: #ffc107;
+ transition: .7s ease;
+
+}
+.icon-x:hover{
+  color: #ffc107;
+  transition: .7s ease;
+
+}
+.icon-li:hover{
+  color: #ffc107;
+  transition: .7s ease;
+
+}
+
+.h{
+    padding-left: 6px;
+}
+.icon-container{
+    position: relative;
+    margin-right: 10px;
+    height: 20px;
+    padding-left:24px;
+    display: flex;
+    align-items: center;
+    
+}
+.loc-span{
+  margin-right: 45px;
+}
+.location{
+  display: flex;
+}
+.row {
+  display: flex;
+ 
+  background-color: rgba(0, 0, 0, 0); 
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: white;
+}
+
+
+
+
+.social-links .icon {
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-links .icon:hover {
+  color: #ffc107; /* Yellow hover effect */
+}
+@media  (max-width: 1200px) {
+  .row{
+     display:none ;
+  }
+
+}
