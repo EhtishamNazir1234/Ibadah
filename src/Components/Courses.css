@@ -1,0 +1,99 @@
+.background-image {
+  background-image: url("../assets/bannr-img.jpg");
+    height: 100%;
+   background-size: 155%;
+   position: absolute;
+background-position: 20% 0%;
+font-family: 'Sawarabi Mincho';
+    background-repeat: no-repeat;
+
+
+}
+.background-image img{
+   position: absolute;
+   top: 250px;
+   left: 50% ;
+   transform: translateX(-50%);
+   /* font-family: 'Sawarabi Mincho'; */
+}
+.background-image h2 {
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    color: #fff;
+    font-size: 58px;
+    font-family: 'Sawarabi Mincho';
+    transform: translateX(-50%);
+}
+.background-image li{
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    
+    font-size: 20px;
+    color: #fff;
+   
+}
+.sect2{
+    display: flex;
+
+}
+.course-card{
+    text-align: center;
+    width: 100%;
+ 
+    height:auto;
+    border: 1px solid #bcbcbc;
+    margin-top: 450px;
+    margin-left: 40px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+.course-card img{
+    border-top-left-radius: 200px;
+    border-top-right-radius:200px ;
+}
+.c-c-content {
+    text-align: left;
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 14px;
+        font-family: 'Sawarabi Mincho';
+    }
+    .c-c-content h4{
+        justify-content: left;
+    font-size: 22px;
+    color: #444;
+    font-weight: 800;
+}
+ .c-c-content span {
+    
+    color:#007d3a;
+    font-weight: bold;
+}
+.courses-weeks {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 26px;
+    background-color: #fbc50b;
+    margin-top: 23px;
+        margin: 4px;
+    
+}
+.courses-weeks h6 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.border {
+    border: 1px solid #000000 ;
+    height: 50px;
+    margin-top: -30px;
+}
+
+
+

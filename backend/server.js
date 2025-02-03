@@ -1,35 +1,41 @@
-require("dotenv").config();
-const cors = require("cors");
-const mongoose = require("mongoose");
-const express = require("express");
-const bodyParser = require("body-parser");
-const AuthRoutes = require("./Routes/AuthRouter");
+import dotenv from "dotenv";
+import cors from "cors";
+import mongoose from "mongoose";
+import express from "express";
+import bodyParser from "body-parser";
+import AuthRouter from "./Routes/AuthRouter.js";
+import AzaanRouter from "./Routes/AzaanRouter.js";
+import CourseRouter from "./Routes/CourseRouter.js"; // Import CourseRouter
+import path from "path";
+import { fileURLToPath } from "url";
 
-// This will allow cross-origin requests
-
+dotenv.config();
 const app = express();
-app.use(bodyParser.json());
-app.use(cors());
-// Dummy prayer times data
-// const prayerTimes = [
-//   { name: "Fajr", time: "3:24 AM", iqamah: "4:15 AM" },
-//   { name: "Zuhr", time: "1:09 PM", iqamah: "1:30 PM" },
-//   { name: "Asr", time: "6:29 PM", iqamah: "7:30 PM" },
-//   { name: "Maghrib", time: "9:01 PM", iqamah: "9:01 PM" },
-//   { name: "Isha", time: "10:10 PM", iqamah: "10:45 PM" },
-//   { name: "Jummah", time: "1:10 PM", iqamah: "2:45 PM" },
-// ];
-// mongooseconnection
+const _filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(_filename);
+
+// Middleware
+app.use(bodyParser.json()); // For parsing JSON bodies
+app.use(cors()); // To allow cross-origin requests
+app.use(express.json()); // Built-in middleware for parsing JSON
+app.use("/uploads", express.static(path.join(__dirname, "uploads"))); //serves image from the upload driectory
+
+// MongoDB Connection
 mongoose
-  .connect(`${process.env.mongo_dbconnection}Ibadaah`)
+  .connect(`${process.env.mongo_dbconnection}/Ibadaah`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.log(err));
+  .catch((err) => console.error("MongoDB connection error:", err));
 
-// API route to send prayer times
-app.use("/api", AuthRoutes);
+// API Routes
+app.use("/api/azaans", AzaanRouter); // Azaan management routes
+app.use("/api/auth", AuthRouter); // Authentication routes
+app.use("/api/courses", CourseRouter); // Course management routes
 
-const port = process.env.port || 5000;
-// Start the server
+// Start the Server
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });

@@ -29,43 +29,28 @@ const Body = () => {
       <section className="nmz">
         <div className="container">
           <div className="namaz-timing">
-           {prayerTImes.map((prayer, index) => (
-  <div className="namaz-time" key={index}>
-    <img src={prayerImages[index % prayerImages.length]} alt="icon" />
-    <h4>{prayer.name}</h4>
-    <h5>{prayer.time}</h5>
-    <span>{prayer.iqamah}</span>
-  </div>
-))}
-
+            {prayerTImes.map((prayer, index) => (
+              <div className="namaz-time" key={index}>
+                <img
+                  src={prayerImages[index % prayerImages.length]}
+                  alt="icon"
+                />
+                <h4>{prayer.name}</h4>
+                <h5>{prayer.time}</h5>
+                <span>{prayer.iqamah}</span>
               </div>
-          
-          </div>
-        
-      </section>
-      <section className="sec2">
-        <div className="container">
-          <div className="heading">
-            <img src={img7} />
-            <p> Welcome to the Islamic Center</p>
-            <h2>Know The Real History of Islam</h2>
-          </div>
-
-          <div className="isl-hist">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscsed do eiusmod
-              tempor incididunt ut labore etedum dolor sit a ad minim veniam,
-              quis nostr incididunt ut laborcitationn tempor incididunt ut
-              labore um dolor sit amet, consectetur adipiscsed do eiu agna a
-              liqua. Ut enim ad minim veniam, quis nostr incididunt ut
-              laborcitation.
-            </p>
-          </div>
-          <div className="circle">
-            <img src={img8} alt="" />
-            <figure className="circle-img"></figure>
+            ))}
           </div>
         </div>
+        <div className="heading">
+          <img src={img7} />
+          <p> Welcome to the Islamic Center</p>
+          <h2>Know The Real History of Islam</h2>
+        </div>
+        <div className="circle-img">
+          <img className='rotate' src={img8} alt="" />
+         
+        </div>  
       </section>
     </>
   );

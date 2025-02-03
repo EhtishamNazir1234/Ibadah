@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const AzaanSchema = new mongoose.Schema({
   iqamah: {
@@ -17,4 +17,4 @@ const AzaanSchema = new mongoose.Schema({
 
 const Azaan = mongoose.model("Azaan", AzaanSchema);
 
-module.exports = Azaan;
+export default Azaan;

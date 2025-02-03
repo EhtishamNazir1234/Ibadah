@@ -1,11 +1,11 @@
-const express = require("express");
+ // For generating JWT tokens
+import express from "express";
+
+import { login, register } from "../Controllers/AuthController.js";
 const router = express.Router();
-const AuthController = require("../controllers/AuthController");
 
-// POST request to create Azaan
-router.post("/azaan", AuthController.createAzaan);
 
-// GET request to fetch Azaans
-router.get("/azaans", AuthController.getAzaans);
+router.post('/Register',register);
+router.post('/login',login);
 
-module.exports = router;
+export default router;

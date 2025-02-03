@@ -1,52 +1,58 @@
-import React from 'react'
-import "./Navbar.css"
-import img from"../assets/image.png"
-const NavBar = () => {
+import React from "react";
+import "./Navbar.css";
+import img from "../assets/image.png";
+import { Link } from "react-router-dom";
+
+const NavBar = ({ onOpenModal }) => {
   return (
     <>
       <nav className="nav-bar">
-        <a href="/index.html">
-          <img className="img" src={img} />
-        </a>
-        
+        <Link to="/index.html">
+          <img className="img" src={img} alt="Logo" />
+        </Link>
+
         <ul className="nav-links">
           <li>
-            <a href="#home">
+            <Link to="/">
               <b>Home</b>
-            </a>{" "}
+            </Link>
           </li>
           <li>
-            <a href="#about">
+            <Link to="/about">
               <b>About</b>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#courses">
+            <Link to="/courses">
               <b>Courses</b>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#campaigns">
+            <Link to="/campaigns">
               <b>Campaigns</b>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#Pages">
+            <Link to="/Pages">
               <b>Pages</b>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#News">
+            <Link to="/News">
               <b>News</b>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contacts">
-              <b>Contact</b>
-            </a>
+            <Link to="/contacts">
+              <b>Contacts</b>
+            </Link>
+          </li>
+          <li>
+            <Link onClick={onOpenModal}>Log In</Link>
           </li>
         </ul>
-        <a>
+
+        <Link>
           <div className="ci-sv">
             <svg
               className="svg"
@@ -57,7 +63,7 @@ const NavBar = () => {
             </svg>
             <div className="contact-info"> +(00)123-345-11</div>
           </div>
-        </a>
+        </Link>
         <div className="ver-li"></div>
         <a href="javascript:void(0)" className="search-btn">
           <svg
@@ -74,6 +80,6 @@ const NavBar = () => {
       </nav>
     </>
   );
-}
+};
 
-export default NavBar
+export default NavBar;

@@ -1,10 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
+import axios from "axios"; // Import Axios for API requests
 import "./TopBar.css";
 
-function TopBar  () {
+function TopBar() {
+  const [sunrise, setSunrise] = useState(null);
+  const [sunset, setSunset] = useState(null);
+
+  
+  
+    function formatTime(utcTime) {
+      const date = new Date(utcTime);
+      const hours = date.getHours();
+      const minutes = date.getMinutes();
+      const ampm = hours >= 12 ? "PM" : "AM";
+      const formattedHours = hours % 12 || 12; // Convert 24-hour format to 12-hour format
+      const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes; // Add leading zero
+      return `${formattedHours}:${formattedMinutes} ${ampm}`;
+    }
+
+  useEffect(() => {
+    const fetchSunData = async () => {
+      try {
+        const response = await axios.get(
+          "https://api.sunrise-sunset.org/json?lat=31.5497&lng=74.3436&formatted=0" // Lahore coordinates
+        );
+        const sunriseTime = formatTime(response.data.results.sunrise);
+        const sunsetTime = formatTime(response.data.results.sunset);
+        setSunrise(sunriseTime);
+        setSunset(sunsetTime);
+      } catch (error) {
+        console.error("Error fetching sunrise/sunset data:", error);
+      }
+    };
+
+    fetchSunData();
+  }, []);
   return (
-    <div className="row ">
+    <div className="row">
       <div className="icon-container">
         <div className="icon-container">
           <i>
@@ -72,7 +105,7 @@ function TopBar  () {
             </svg>
           </i>
           <h2 className="h">
-            Sunrise At: <b>5:44 AM</b>
+            Sunrise At: <b>{sunrise ||  "Loading..."}</b>
           </h2>
         </div>
         <div className="icon-container">
@@ -98,7 +131,7 @@ function TopBar  () {
             </svg>
           </i>
           <h4 className="h">
-            Sunset At<b>: 7:35 PM</b>
+            Sunset At: <b>{sunset ||  "Loading..."}</b>
           </h4>
         </div>
       </div>
@@ -131,11 +164,11 @@ function TopBar  () {
               </g>
             </g>
           </svg>
-          <span className="loc-span"> New Street Town 2445x United State</span>
+          Lahore, Pakistan
         </a>
       </div>
     </div>
   );
-};
+}
 
 export default TopBar;

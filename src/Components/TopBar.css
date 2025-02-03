@@ -11,8 +11,13 @@
 .social-links {
   display: flex;
   font-size: 20px;
-  align-items: center;
+  margin-right: 170px;
+
+  align-items: center; 
   gap: 10px;
+}
+.social-links a{
+  margin-bottom: 15px;
 }
 .icon-fb:hover{
  color: #ffc107;
@@ -32,6 +37,7 @@
 
 .h{
     padding-left: 6px;
+    color: white  ;
 }
 .icon-container{
     position: relative;
@@ -42,9 +48,7 @@
     align-items: center;
     
 }
-.loc-span{
-  margin-right: 45px;
-}
+
 .location{
   display: flex;
 }
@@ -61,16 +65,6 @@
 
 
 
-
-.social-links .icon {
-  font-size: 16px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.social-links .icon:hover {
-  color: #ffc107; /* Yellow hover effect */
-}
 @media  (max-width: 1200px) {
   .row{
      display:none ;

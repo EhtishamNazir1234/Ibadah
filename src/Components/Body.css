@@ -1,6 +1,6 @@
 .container{
-    /* max-width: 1140px; */
-    padding: 0px 0px 0px 65px;
+    
+    /* padding: 0px 0px 0px 65px; */
 }
 .namaz-time img {
     position: relative;
@@ -27,6 +27,8 @@
 .namaz-timing {
     display: flex;
     align-items: center;
+    position: relative;
+    bottom: 123.5px;
     
 }
 .namaz-time:before {
@@ -81,7 +83,10 @@
     text-align: center;
     width: 60%;
     margin: auto;
-    padding-bottom: 50px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 260px;
+   
 }
 .heading p{
     color: #444;
@@ -115,7 +120,16 @@ font-size: 50px;
     justify-content: center;
     border-radius: 50%;
     margin: auto;
+    position: relative;
+    bottom: 250px;
+    left: 50px;
 }
-.circle{
-   animation:rotate 2s infinite;
+
+.rotate {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+ 
+  100% { transform: rotate(360deg); }
 }
