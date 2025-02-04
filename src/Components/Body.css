@@ -1,7 +1,4 @@
-.container{
-    
-    /* padding: 0px 0px 0px 65px; */
-}
+
 .namaz-time img {
     position: relative;
 }
@@ -79,39 +76,94 @@
 .namaz-time:hover h5 ,.namaz-time:hover h4,.namaz-time:hover span  {
     color: #fff;
 }
-.heading{
+/* bsjk */
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0px 0px 0px 65px; */
+}
+
+.heading {
     text-align: center;
     width: 60%;
-    margin: auto;
-    margin-top: 0px;
-    position: relative;
-    bottom: 260px;
-   
+    padding-bottom: 0px;
 }
-.heading p{
+.heading h2 {
+    font-family: 'Sawarabi Mincho';
+}
+.heading p {
     color: #444;
+    font-size: 19px;
     padding-top: 24px;
-    font-size: 18px;
     font-family: 'Sawarabi Mincho';
     text-transform: uppercase;
+
 }
 .heading h2{
-font-size: 50px;
-    font-family: 'Sawarabi Mincho';
-    letter-spacing: 2px;
+
+    font-size: 49px;
 }
 .heading img{
-    display: block;
-    margin: 0 auto;
+    position: relative;
+    left: 350px;
+}
+.islamic-history p {
+    position: relative;
+    color: #555;
+    line-height: 30px;
+    padding-bottom: 30px;
+   font-size: 17px;
+}
+.islamic-history {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    text-align: left;
+    width: 77%;
+    margin-left: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+ul.list li {
+    padding-bottom: 14px;
+    color: #333;
+    position: relative;
+    padding-left:20px;
+    font-size: 18px;
+}
+ul.list li:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color:#007d3a;
+    border-radius: 50%;
+    top: 7px;
+    left:0;
+}
+.islamic-history  a.btn {
+    background-color: transparent;
+    border: 3px solid #fbc50b;
+    margin-top: 30px;
+    position: static;
+    
     
 }
-.isl-hist p{
-    color: #444;
-    width: 35%;
-    font-size: 18px;
-    padding-bottom: 30px;
+.circle-text {
+    position: relative;
+    text-align: center;
+    right: 50px;
 }
-.circle-img{
+.circle-text img.circle-text-img {
+    top: 6%;
+    position: absolute;
+    left: 16%;
+    animation: spin 25s infinite;
+}
+.circle-text figure.circle-img {
     width: 194px;
     height: 194px;
     background-color:#fbc50b;
@@ -120,14 +172,48 @@ font-size: 50px;
     justify-content: center;
     border-radius: 50%;
     margin: auto;
-    position: relative;
-    bottom: 250px;
-    left: 50px;
+}
+.circle-text figure.circle-img img {
+    border: 1px solid black;
+    width: 118px;
+    padding: 30px;
+    border-radius: 50%;
 }
 
-.rotate {
-  animation: spin 10s linear infinite;
+ .real-history-book {
+    
+    position: relative;
+   width: 250px;
+    right: 50px;
+
 }
+
+.real-history-book img {
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+.real-history-book.two {
+    position: relative;
+    right: 25px;
+   position: relative;
+   width: 350px
+
+}
+
+.real-history-book::before {
+    z-index: 0;
+    position: relative;
+    background-image: url(../assets/background-history.png);
+    mix-blend-mode: difference;
+  
+}
+
+.real-history-book.two img {
+    border-radius: 0;   
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+} 
 
 @keyframes spin {
  
