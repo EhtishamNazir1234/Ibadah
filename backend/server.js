@@ -15,8 +15,13 @@ const _filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(_filename);
 
 // Middleware
-app.use(bodyParser.json()); // For parsing JSON bodies
-app.use(cors()); // To allow cross-origin requests
+app.use(bodyParser.json()); 
+app.use(
+  cors({
+    origin: "https://ibadah-mu.vercel.app", 
+    methods: ["GET", "POST"], 
+  })
+); // To allow cross-origin requests
 app.use(express.json()); // Built-in middleware for parsing JSON
 app.use("/uploads", express.static(path.join(__dirname, "uploads"))); //serves image from the upload driectory
 
