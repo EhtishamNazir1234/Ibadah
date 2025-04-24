@@ -15,7 +15,10 @@ const Home = () => {
   const handleCloseModal = () => setModalOpen(false);
   return (
     <div>
-      <Header onOpenModal={handleOpenModal} />
+      <Header
+        onOpenModal={handleOpenModal}
+        
+      />
       <Body />
       <Footer />
       {isModalOpen && (
