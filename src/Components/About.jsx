@@ -1,6 +1,7 @@
 import React from "react";
 import TopBar from "./TopBar";
-import { FaPlay } from "react-icons/fa";
+import imgayt from "../assets/ayat-with-man.png";
+import imgayt1 from "../assets/ayat-with.jpg";
 import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
 import img2 from "../assets/heading-img.png";
@@ -22,6 +23,7 @@ import img14 from "../assets/service-icon-2.png";
 import img15 from "../assets/service-icon-3.png";
 import img16 from "../assets/service-icon-4.png";
 import img17 from "../assets/ayat.png";
+import AyatCarousel from "./AyatCarousal";
 const About = () => {
   return (
     <>
@@ -236,9 +238,14 @@ const About = () => {
               </h2>
               <h5>Al-Baqrah (9) : 153</h5>
             </div>
+            <div className="tarjumaimg">
+              <img className="imgayat1" src={imgayt1} alt="" />
+              <img src={imgayt} alt="" />
+            </div>
           </div>
         </div>
       </div>
+      <AyatCarousel/>
       <Footer />
     </>
   );

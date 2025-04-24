@@ -13,6 +13,9 @@ import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
 import Dashboard from "./Components/Dashboard";
 import About from "./Components/About";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
 // import Modal from "./Components/Modal";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import PrivateRoute from "./Components/PrivateRoute";
@@ -54,6 +57,7 @@ function App() {
             <Route element={<PrivateRoute />} />
             <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
+          
         </div>
       </Router>
     </AuthProvider>

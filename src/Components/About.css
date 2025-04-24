@@ -451,12 +451,27 @@ border-bottom-left-radius: 200px;
   width: 300px;
   /* top: 20px; */
 }
+.imgayat1{
+  border-top-left-radius:500px;
+  height: 450px;
+
+  margin-left: -20px;
+}
+.tarjumaimg img{
+
+  /* width: ; */
+
+  position: absolute;
+  left: 700px;
+  bottom: -750px;
+
+}
 .ayat h5{
   text-align: center;
   bottom: -530px;
   background-color: #fbc50b;
   font-size: 15px;
-  border-radius: 30px;
+  border-radius: 30px; 
   padding: 5px;
 margin-left: 30px;
   left: 190px;

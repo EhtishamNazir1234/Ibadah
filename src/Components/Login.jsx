@@ -14,7 +14,7 @@ function Login({ onOpenRegister }) {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/login`),
         {
           email,
           password,
