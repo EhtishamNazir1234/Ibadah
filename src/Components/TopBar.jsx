@@ -105,7 +105,7 @@ function TopBar() {
             </svg>
           </i>
           <h2 className="h">
-            Sunrise At: <b>{sunrise ||  "Loading..."}</b>
+            Sunrise At: <b>{sunrise || "Loading..."}</b>
           </h2>
         </div>
         <div className="icon-container">
@@ -131,7 +131,7 @@ function TopBar() {
             </svg>
           </i>
           <h4 className="h">
-            Sunset At: <b>{sunset ||  "Loading..."}</b>
+            Sunset At: <b>{sunset || "Loading..."}</b>
           </h4>
         </div>
       </div>
@@ -144,7 +144,10 @@ function TopBar() {
           <FaTwitter className="icon-x" />
         </a>
         <div className="vl">|</div>
-        <a href="#">
+        <a
+          href="https://www.linkedin.com/in/ehtisham-nazir-7aa549247/"
+          target="_blank"
+        >
           <FaLinkedin className="icon-li" />
         </a>
       </div>

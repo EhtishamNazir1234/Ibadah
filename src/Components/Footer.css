@@ -17,7 +17,7 @@
     background-image: url("../assets/footer-img.jpg");
   z-index: 2;
 
-    position: relative;
+    position: absolute;
     
     width: 100%;
     height: 728px;

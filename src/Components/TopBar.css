@@ -51,6 +51,10 @@
 
 .location{
   display: flex;
+  position: relative;
+  bottom: 5px;
+  right: 150px;
+  font-size: medium;
 }
 .row {
   display: flex;

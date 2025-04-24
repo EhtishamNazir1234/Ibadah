@@ -1,221 +1,519 @@
-
+.container {
+  margin-bottom: -300px;
+}
 .namaz-time img {
-    position: relative;
+  position: relative;
 }
 .namaz-time {
-    display: flex;   
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 190px;
-    height: 270px;
-    padding-top: 36px;
-    border: 1px solid #bcbcbc;
-    border-bottom-left-radius: 150px;
-    border-bottom-right-radius: 151px;
-    padding-bottom: 100px;
-    position: relative;
-    background-image: url("../assets/color-bg.jpg");
-    overflow: hidden;
-    margin-left: -1px;
-    margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 270px;
+  padding-top: 36px;
+  border: 1px solid #bcbcbc;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 151px;
+  padding-bottom: 100px;
+  position: relative;
+  background-image: url("../assets/color-bg.jpg");
+  overflow: hidden;
+  margin-left: -1px;
+  margin-bottom: 100px;
 }
 .namaz-timing {
-    display: flex;
-    align-items: center;
-    position: relative;
-    bottom: 123.5px;
-    
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 123.5px;
 }
 .namaz-time:before {
-    background-color: #fff;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: .4s ease-in-out;
+  background-color: #fff;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease-in-out;
 }
 .namaz-time:after {
-    left: 44%;
-    bottom: 40px;
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 4px solid #fbc50b;
+  left: 44%;
+  bottom: 40px;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid #fbc50b;
 }
 .namaz-time h4 {
-    color: #007d3a;
-    font-family: 'Sawarabi Mincho';
-    font-size: 36px;
-    
-    padding-top: 6px;
-    padding-bottom: 20px;
-   
-    position: relative;
+  color: #007d3a;
+  font-family: "Sawarabi Mincho";
+  font-size: 36px;
+
+  padding-top: 6px;
+  padding-bottom: 20px;
+
+  position: relative;
 }
-.namaz-time  span {
-    position: relative;
-    display: block;
-   
-    font-size: 16px;
-    padding-top: 4px;
+.namaz-time span {
+  position: relative;
+  display: block;
+
+  font-size: 16px;
+  padding-top: 4px;
 }
 .namaz-time h5 {
-    position: relative;
-    font-size: 20px;
+  position: relative;
+  font-size: 20px;
 }
 .namaz-time:hover:before {
-            bottom: 0;
-            height: 0;
+  bottom: 0;
+  height: 0;
 }
-.namaz-time:hover h5 ,.namaz-time:hover h4,.namaz-time:hover span  {
-    color: #fff;
+.namaz-time:hover h5,
+.namaz-time:hover h4,
+.namaz-time:hover span {
+  color: #fff;
 }
 /* bsjk */
-.container1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* padding: 0px 0px 0px 65px; */
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* padding: 0px 0px 0px 65px; */
 }
 
 .heading {
-    text-align: center;
-    width: 60%;
-    padding-bottom: 0px;
+  text-align: center;
+  width: 60%;
+  padding-bottom: 0px;
 }
 .heading h2 {
-    font-family: 'Sawarabi Mincho';
+  font-family: "Sawarabi Mincho";
 }
 .heading p {
-    color: #444;
-    font-size: 19px;
-    padding-top: 24px;
-    font-family: 'Sawarabi Mincho';
-    text-transform: uppercase;
-
+  color: #444;
+  font-size: 19px;
+  padding-top: 24px;
+  font-family: "Sawarabi Mincho";
+  text-transform: uppercase;
 }
-.heading h2{
-
-    font-size: 49px;
+.heading h2 {
+  font-size: 49px;
 }
-.heading img{
-    position: relative;
-    left: 350px;
+.heading img {
+  position: relative;
+  left: 350px;
 }
 .islamic-history p {
-    position: relative;
-    color: #555;
-    line-height: 30px;
-    padding-bottom: 30px;
-   font-size: 17px;
+  position: relative;
+  color: #555;
+  line-height: 30px;
+  padding-bottom: 30px;
+  font-size: 17px;
 }
 .islamic-history {
-    display: flex;
-    justify-content: center;
-    align-items:flex-start;
-    flex-direction: column;
-    text-align: left;
-    width: 77%;
-    margin-left: 40px;
-    padding: 20px;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  width: 77%;
+  margin-left: 40px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 ul.list li {
-    padding-bottom: 14px;
-    color: #333;
-    position: relative;
-    padding-left:20px;
-    font-size: 18px;
+  padding-bottom: 14px;
+  color: #333;
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
 }
 ul.list li:before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color:#007d3a;
-    border-radius: 50%;
-    top: 7px;
-    left:0;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #007d3a;
+  border-radius: 50%;
+  top: 7px;
+  left: 0;
 }
-.islamic-history  a.btn {
-    background-color: transparent;
-    border: 3px solid #fbc50b;
-    margin-top: 30px;
-    position: static;
-    
-    
+.islamic-history a.btn {
+  background-color: transparent;
+  border: 3px solid #fbc50b;
+  margin-top: 30px;
+  position: static;
+}
+a.btn:hover {
+  background-color: #fbc50b;
 }
 .circle-text {
-    position: relative;
-    text-align: center;
-    right: 50px;
+  position: relative;
+  text-align: center;
+  right: 50px;
 }
 .circle-text img.circle-text-img {
-    top: 6%;
-    position: absolute;
-    left: 16%;
-    animation: spin 25s infinite;
+  top: 6%;
+  position: absolute;
+  left: 16%;
+  animation: spin 25s infinite;
 }
 .circle-text figure.circle-img {
-    width: 194px;
-    height: 194px;
-    background-color:#fbc50b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: auto;
+  width: 194px;
+  height: 194px;
+  background-color: #fbc50b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: auto;
 }
 .circle-text figure.circle-img img {
-    border: 1px solid black;
-    width: 118px;
-    padding: 30px;
-    border-radius: 50%;
+  border: 1px solid black;
+  width: 118px;
+  padding: 30px;
+  border-radius: 50%;
 }
 
- .real-history-book {
-    
-    position: relative;
-   width: 250px;
-    right: 50px;
-
+.real-history-book {
+  position: relative;
+  width: 250px;
+  right: 50px;
 }
 
 .real-history-book img {
-    border-bottom-left-radius: 150px;
-    border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
 }
 
 .real-history-book.two {
-    position: relative;
-    right: 25px;
-   position: relative;
-   width: 350px
-
+  position: relative;
+  right: 25px;
+  position: relative;
+  width: 350px;
 }
 
 .real-history-book::before {
-    z-index: 0;
-    position: relative;
-    background-image: url(../assets/background-history.png);
-    mix-blend-mode: difference;
-  
+  z-index: 0;
+  position: relative;
+  background-image: url(../assets/background-history.png);
+  mix-blend-mode: difference;
 }
 
 .real-history-book.two img {
-    border-radius: 0;   
-    border-top-left-radius: 250px;
-    border-top-right-radius: 250px;
-} 
+  border-radius: 0;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+}
+.container2 {
+  margin-left: 100px;
+  padding-bottom: 250px;
+}
+.community-hoverimg {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.salahimg {
+  position: relative;
+  bottom: 20px;
+  right: 30px;
+}
+.salahimg::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0)
+  );
+}
+.salahimg:hover::before {
+  animation: shine 0.5s ease-in-out forwards;
+}
+@keyframes shine {
+  0% {
+    top: -100%;
+    left: -100%;
+    opacity: 1;
+  }
+   50% {
+        top: 50%;
+        left: 50%;
+        opacity:1; 
+    }
+
+  100% {
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+  }
+}
+
+.salahimg2 {
+  position: relative;
+  top: 10px;
+  right: 95px;
+}
+.salahimg3 {
+  position: relative;
+  overflow: hidden;
+  right: 70px;
+}
+.salahimg3::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0)
+  );
+}
+.salahimg3:hover::before {
+  animation: shine 0.5s ease-in-out forwards;
+}
+@keyframes shine {
+  0% {
+    top: -100%;
+    left: -100%;
+    opacity: 1;
+  }
+   50% {
+        top: 50%;
+        left: 50%;
+        opacity: 1; 
+    }
+
+  100% {
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+  }
+}
+.community-text1 {
+  width: 100px;
+  position: relative;
+  top: 140px;
+  right: 389px;
+}
+.community-text2 {
+  position: relative;
+  /* top: 140px; */
+  /* right: 389px;     */
+}
+.community-text2 p {
+  /* margin-top: 50px; */
+  margin-left: 100px;
+  font-size: 28px;
+  font-family: "Sawarabi Mincho";
+}
+.community-text3 {
+  position: relative;
+}
+.community-text3 p {
+  margin-left: 100px;
+  font-size: 28px;
+  font-family: "Sawarabi Mincho";
+}
+
+.community-text1 p {
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: 28px;
+  font-family: "Sawarabi Mincho";
+}
+.community-text1 {
+  background-color: forestgreen;
+  border-radius: 50%;
+  width: 90px;
+  position: relative;
+  top: 90px;
+  height: 90px;
+}
+.svg {
+  margin-left: 0px;
+  position: relative;
+  z-index: 1;
+  top: 260px;
+  right: 14px;
+  width: 60px;
+  border-radius: 50%;
+  /* animation: none; */
+}
+.svg:hover {
+  animation: jump 0.5s ease;
+}
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.community-hoverimg img {
+  border-radius: 146px;
+  border-bottom-left-radius: 0px;
+}
 
 @keyframes spin {
- 
-  100% { transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .namaz-timing {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .namaz-time {
+    width: 160px; /* Reduce size slightly for tablets */
+    height: 240px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+/* 📱 Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    margin-bottom: -150px;
+  }
+
+  .namaz-timing {
+    flex-direction: column; /* Stack prayer times vertically */
+    align-items: center;
+  }
+
+  .namaz-time {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .namaz-time h4 {
+    font-size: 28px;
+  }
+
+  .namaz-time h5 {
+    font-size: 18px;
+  }
+
+  .namaz-time span {
+    font-size: 14px;
+  }
+}
+
+/* 🌍 Islamic History Section Adjustments */
+@media screen and (max-width: 1024px) {
+  .islamic-history {
+    width: 90%;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .islamic-history p {
+    font-size: 16px;
+  }
+
+  ul.list li {
+    font-size: 16px;
+  }
+}
+
+/* 📱 Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .heading {
+    width: 90%;
+    text-align: center;
+  }
+
+  .heading h2 {
+    font-size: 32px;
+  }
+
+  .heading img {
+    left: 0;
+    max-width: 80px;
+  }
+
+  .islamic-history {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .islamic-history p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+/* 📍 Community Images Section */
+@media screen and (max-width: 1024px) {
+  .community-hoverimg {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .community-hoverimg {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .salahimg,
+  .salahimg2,
+  .salahimg3 {
+    position: static;
+    text-align: center;
+  }
+
+  .community-text1,
+  .community-text2,
+  .community-text3 {
+    position: static;
+    text-align: center;
+  }
+
+  .container2 {
+    margin-left: 0;
+    padding-bottom: 100px;
+  }
+}
+
+/* 🌍 Image Scaling */
+@media screen and (max-width: 768px) {
+  .real-history-book img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .real-history-book.two {
+    width: 100%;
+    text-align: center;
+  }
 }

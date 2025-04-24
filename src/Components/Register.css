@@ -2,7 +2,10 @@
   text-align: center;
   margin-bottom: 20px;
 }
-
+/* .container3{
+  position: absolute;
+  bottom: 100px;
+} */
 h2 {
   color: #333;
 }
@@ -38,12 +41,12 @@ input:focus {
   outline: none;
 }
 
-button {
+.button {
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
+  background-color: #a6c5e5;
   color: white;
   font-size: 16px;
   cursor: pointer;

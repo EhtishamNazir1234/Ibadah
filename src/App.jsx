@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Home from "./Components/Home";
-import Login from "./Components/Login";
-import Register from "./Components/Register";
 import Admin from "./Components/Admin";
 import Courses from "./Components/Courses";
-
+import NotFoundPage from "./Components/NotFoundPage";
 import {
   BrowserRouter as Router,
   Routes,
@@ -41,8 +39,8 @@ function App() {
               element={role === "admin" ? <Admin /> : <Navigate to="/" />}
             />
             <Route path="/about" element={<About />} />
-
-            <Route path="/Register" element={<Register />} />
+            <Route path="*" element={<NotFoundPage />} />
+            {/* <Route path="/Register" element={<Register />} /> */}
             <Route
               path="/dashboard"
               element={
@@ -52,7 +50,7 @@ function App() {
               }
             />
             <Route path="/courses" element={<Courses />} />
-            <Route path="/login" element={<Login />} />
+            {/* <Route path="/login" element={<Login />} /> */}
             <Route element={<PrivateRoute />} />
             <Route path="/dashboard" element={<Dashboard />} />
           </Routes>

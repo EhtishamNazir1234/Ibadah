@@ -1,10 +1,44 @@
-body,html{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    
-}/* Modal Overlay */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+} /* Modal Overlay */
+.svg2 {
+  margin-left: 400px;
+}
+.svg2 p{
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+.svg2 span{
+  color: rgb(107 114 128 );
+  margin-left: 110px;
+  
+}
+.linkn a{
+  position: relative;
+  left: 520px;
+  width: 10px;
+  margin-left: 50px;
+  color: rgb(107 114 128 );
+  
+}
+.linkn a:hover{
+  color: black;
+  text-decoration: underline;
+  transition: 0.4s ease;
+ 
+}
+.svg2 h1 {
+  color: #007d3a;
+  font-weight: bold;
+  margin-left: 140px;
+  
+  font-size: 20px;
+}
 .modal {
   position: fixed;
   top: 0;

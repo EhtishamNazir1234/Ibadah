@@ -15,7 +15,7 @@ function Header({onOpenModal}) {
     <>
       <header className="header">
         <TopBar />
-        <NavBar  onOpenModal={onOpenModal}/>
+        <NavBar onOpenModal={onOpenModal} />
         <div
           className="background-image zoom"
           style={{ backgroundImage: `url(${img2})` }}
@@ -26,13 +26,12 @@ function Header({onOpenModal}) {
           <p>
             When things are too hard to handle, retreat &amp; count your
             blessings instead
-          </p>      
-          <Link to="/Courses" className="btn">
+          </p>
+          <Link to="/Courses" className="btn1">
             Discover Courses
           </Link>
         </div>
       </header>
-    
     </>
   );
 }

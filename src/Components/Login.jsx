@@ -1,16 +1,12 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 import axios from "axios";
-import { AuthContext } from "../Contexts/AuthContext";
-
-function Login() {
+function Login({ onOpenRegister }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState(""); // For success or error messages
-  const { login } = useContext(AuthContext);
   const navigate = useNavigate();
-
   const handleEmailChange = (e) => setEmail(e.target.value);
   const handlePasswordChange = (e) => setPassword(e.target.value);
 
@@ -37,7 +33,7 @@ function Login() {
   };
 
   return (
-    <div className="container">
+    <div className="container3">
       <div className="card">
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
@@ -69,7 +65,8 @@ function Login() {
         </form>
         {message && <p className="error-message">{message}</p>}
         <p className="signup-link">
-          Don't have an account? <Link to="/register">Sign Up</Link>
+          Don't have an account?{" "}
+          <Link onClick={() => onOpenRegister()}>Sign Up</Link>
         </p>
       </div>
     </div>

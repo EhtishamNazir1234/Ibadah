@@ -39,7 +39,7 @@ function Register({onOpenModal}) {
   };
 
   return (
-    <div className="container">
+    <div className="container3">
       <div className="card">
         <h2>Sign Up</h2>
         <form onSubmit={handleSubmit}>
@@ -82,7 +82,8 @@ function Register({onOpenModal}) {
         </form>
         {message && <p className="message">{message}</p>}
         <p className="login-link">
-          Already have an account? <Link to="#"onClick={onOpenModal}> Login</Link>
+          Already have an account?
+          <Link onClick={() => onOpenModal()}> Login</Link>
         </p>
       </div>
     </div>

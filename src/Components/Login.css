@@ -4,13 +4,15 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #f3f4f6; /* Tailwind's gray-100 */
+  background-color: #f3f4f6;
 }
-
+.card form {
+  background-color: #007d3a;
+}
 .card {
   width: 100%;
   max-width: 400px;
-  background-color: white;
+  background-color: #fbc50b;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   padding: 2rem;
@@ -20,7 +22,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  color: #374151; /* Tailwind's gray-700 */
+  color: black; /* Tailwind's gray-700 */
 }
 
 .form-group {
@@ -31,7 +33,7 @@
   display: block;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #374151;
+  color: black;
 }
 
 .form-group input {
@@ -43,7 +45,7 @@
 }
 
 .form-group input:focus {
-  outline: none;
+  
   border-color: #3b82f6; /* Tailwind's blue-500 */
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
 }
@@ -62,7 +64,7 @@
 }
 
 .forgot-password {
-    display: flex;
+  display: flex;
   justify-self: end;
   font-size: 0.875rem;
   color: #3b82f6;
@@ -76,7 +78,7 @@
 .button {
   width: 100%;
   padding: 0.75rem;
-  background-color: #3b82f6;
+  background-color: #007d3a;
   color: white;
   border: none;
   border-radius: 0.375rem;
@@ -84,7 +86,9 @@
 }
 
 .button:hover {
-  background-color: #2563eb; /* Tailwind's blue-600 */
+  background-color: #fbc50b;
+  color: black;
+  transition: 01s ease;
 }
 
 .signup-link {
@@ -94,8 +98,8 @@
 }
 
 .signup-link a {
-  color: #3b82f6;
-  text-decoration: none;  
+  color: #007d3a;
+  text-decoration: none;
 }
 
 .signup-link a:hover {

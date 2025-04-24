@@ -1,99 +1,238 @@
+.parent {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  z-index: 1;
+}
 .background-image {
   background-image: url("../assets/bannr-img.jpg");
-    height: 100%;
-   background-size: 155%;
-   position: absolute;
-background-position: 20% 0%;
-font-family: 'Sawarabi Mincho';
-    background-repeat: no-repeat;
-
-
+  height: 100%;
+  background-size: 140%;
+  position: absolute;
+  z-index: -1;
+  background-position: 1% 0%;
+  font-family: "Sawarabi Mincho";
+  background-repeat: no-repeat;
 }
-.background-image img{
-   position: absolute;
-   top: 250px;
-   left: 50% ;
-   transform: translateX(-50%);
-   /* font-family: 'Sawarabi Mincho'; */
+.background-image img {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* font-family: 'Sawarabi Mincho'; */
 }
+
 .background-image h2 {
-    position: absolute;
-    top: 310px;
-    left: 50%;
-    color: #fff;
-    font-size: 58px;
-    font-family: 'Sawarabi Mincho';
-    transform: translateX(-50%);
+  position: absolute;
+  top: 310px;
+  left: 50%;
+  color: #fff;
+  font-size: 58px;
+  font-family: "Sawarabi Mincho";
+  transform: translateX(-50%);
 }
-.background-image li{
-    position: absolute;
-    top: 400px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    
-    font-size: 20px;
-    color: #fff;
-   
-}
-.sect2{
-    display: flex;
+.background-image li {
+  position: absolute;
+  z-index: 20;
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
 
+  font-size: 20px;
+  color: #fff;
 }
-.course-card{
-    text-align: center;
-    width: 100%;
- 
-    height:auto;
-    border: 1px solid #bcbcbc;
-    margin-top: 450px;
-    margin-left: 40px;
-    border-top-left-radius: 200px;
-    border-top-right-radius: 200px;
+.sect2 {
+  display: flex;
+  position: relative;
+  bottom: 350px;
 }
-.course-card img{
-    border-top-left-radius: 200px;
-    border-top-right-radius:200px ;
+.course-card {
+  text-align: center;
+  width: 100%;
+
+  height: auto;
+  border: 1px solid #bcbcbc;
+  margin-top: 450px;
+  margin-left: 40px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+.course-card img {
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+.c-cimg {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.c-cimg::before {
+  content: "";
+  position: absolute;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  background-color: rgba(0, 125, 58, 0.5);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+.c-cimg:hover::before {
+  opacity: 1;
+  transform: scaleY(1);
 }
 .c-c-content {
-    text-align: left;
-        font-size: 20px;
-        line-height: 30px;
-        padding-bottom: 14px;
-        font-family: 'Sawarabi Mincho';
-    }
-    .c-c-content h4{
-        justify-content: left;
-    font-size: 22px;
-    color: #444;
-    font-weight: 800;
+  margin-top: -40px;
+  width: 250px;
+  font-family: "Sawarabi Mincho";
+  margin-left: 20px;
 }
- .c-c-content span {
+.c-c-content a {
+  font-size: 23px;
+}
+.c-c-content a:hover {
+  color: #007d3a;
+  transition: 0.4s ease;
+}
+.color-bg1 img {
+  margin-bottom: 150px;
+  width: 88%;
+  height: 475px;
+  margin-left: 74px;
+  border-bottom-right-radius: 240px;
+  border-bottom-left-radius: 240px;
+  border-top-right-radius: 240px;
+}
+.color-bg1 h4 {
+  position: absolute;
+  left: 100px;
+  color: #fff;
+  font-family: " Sawarabi Mincho";
+  text-align: center;
+  margin-top: 110px;
+  margin-left: 100px;
+  width: 69%;
+
+  line-height: 60px;
+  font-size: 62px;
+}
+
+.color-bg1 span {
+  position: absolute;
+  left: 290px;
+  margin-top: 260px;
+  color: #fff;
+  font-size: 20px;
+}
+.btn12  {
+  background-color: #fbc50b;
+  color: #000;
+  padding: 18px 40px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  position: relative;
+  top: 350px;
+  left: 500px;
+  bottom: 20px;
+  font-weight: bold;
+  overflow: visible;
     
-    color:#007d3a;
-    font-weight: bold;
+}
+
+.overlay-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-40deg);
+  border: 3px solid #fbc50b;
+  padding: 18px;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  opacity: 0;
+
+  transition: 0.4s ease;
+}
+.green-tutor {
+  align-items: center;
+
+  position: relative;
+  border-radius: 40px;
+  bottom: 50px;
+  left: 30px;
+  background-color: #007d3a;
+  height: 65px;
+  width: 80%;
+}
+.green-tutor h4 {
+  position: relative;
+  top: 5px;
+  left: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+.green-tutor span {
+  color: #fff;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.green-tutor img {
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  margin: 10px;
+}
+.c-cimg:hover .overlay-icon {
+  opacity: 1;
+  cursor: pointer;
+}
+.overlay-icon:hover {
+  background-color: #fbc50b;
+  color: black;
+  transform: translate(-50%, -50%) rotate(-360deg);
+}
+.c-c-content {
+  text-align: left;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 14px;
+  font-family: "Sawarabi Mincho";
+}
+.c-c-content h4 {
+  justify-content: left;
+  font-size: 22px;
+  margin-top: 15px;
+  color: #444;
+
+  font-weight: 800;
+}
+
+.c-c-content span {
+  color: #007d3a;
+  font-weight: bold;
 }
 .courses-weeks {
-    display: flex
-;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 26px;
-    background-color: #fbc50b;
-    margin-top: 23px;
-        margin: 4px;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 26px;
+  background-color: #fbc50b;
+  margin-top: 23px;
+  margin: 4px;
 }
 .courses-weeks h6 {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .border {
-    border: 1px solid #000000 ;
-    height: 50px;
-    margin-top: -30px;
+  border: 1px solid #000000;
+  height: 50px;
+  margin-top: -30px;
 }
-
-
-
