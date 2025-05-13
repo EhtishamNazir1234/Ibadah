@@ -18,8 +18,8 @@ const __dirname = path.dirname(_filename);
 app.use(bodyParser.json()); 
 app.use(
   cors({
-    origin: "https://ibadah-mu.vercel.app", 
-    methods: ["GET", "POST"], 
+    origin: "http://localhost:5173",
+    methods: ["GET", "POST"],
   })
 ); // To allow cross-origin requests
 app.use(express.json()); // Built-in middleware for parsing JSON
@@ -28,8 +28,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads"))); //serves i
 // MongoDB Connection
 mongoose
   .connect(`${process.env.mongo_dbconnection}/Ibadaah`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+   dbName:"Ibadah"
   })
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.error("MongoDB connection error:", err));

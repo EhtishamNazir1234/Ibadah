@@ -36,11 +36,11 @@ const NavBar = ({ onOpenModal }) => {
                 <b>Campaigns</b>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/Pages" onClick={toggleMenu}>
                 <b>Pages</b>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/News" onClick={toggleMenu}>
                 <b>News</b>
