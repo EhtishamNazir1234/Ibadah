@@ -20,6 +20,7 @@ import About from "./Components/About";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import PrivateRoute from "./Components/PrivateRoute";
 import { AuthProvider } from "./Contexts/AuthContext";
+import Contact from "./Components/Contact";
 function App() {
   const [role, setRole] = useState("");
 
@@ -52,6 +53,7 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="/contact" element={<Contact/>} />
             <Route path="/courses" element={<Courses />} />
             {/* <Route path="/login" element={<Login />} /> */}
             <Route element={<PrivateRoute />} />

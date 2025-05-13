@@ -1,0 +1,697 @@
+.gaptop {
+  display: flex;
+  margin-left: 75px;
+}
+.gaptop img {
+  width: 285px;
+  height: 285px;
+  margin-left: 2px;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+}
+.funfact {
+  position: relative;
+  bottom: 120px;
+  left: 190px;
+  width: 55px;
+}
+.funfact h1 {
+  color: #fbc50f;
+  position: absolute;
+  bottom: 80px;
+  font-size: 60px;
+  left: -20px;
+  font-weight: bold;
+}
+.funfact h2 {
+  color: white;
+  position: absolute;
+  top: -50px;
+  width: 150px;
+  left: -50px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.funfact sup {
+  color: #fbc50f;
+  position: absolute;
+  top: -75px;
+  font-size: 45px;
+  left: 50px;
+  font-weight: bold;
+}
+
+.funfact2 {
+  position: relative;
+  bottom: 180px;
+  left: 480px;
+  width: 55px;
+}
+.funfact2 h1 {
+  color: #fbc50f;
+  position: absolute;
+  bottom: 80px;
+  font-size: 60px;
+  left: -20px;
+  font-weight: bold;
+}
+.funfact2 h2 {
+  color: white;
+  position: absolute;
+  top: -50px;
+  width: 200px;
+  left: -50px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.funfact2 sup {
+  color: #fbc50f;
+  position: absolute;
+  top: -75px;
+  font-size: 45px;
+  left: 50px;
+  font-weight: bold;
+}
+
+.funfact3 {
+  position: relative;
+  bottom: 240px;
+  left: 770px;
+  width: 55px;
+}
+.funfact3 h1 {
+  color: #fbc50f;
+  position: absolute;
+  bottom: 80px;
+  font-size: 60px;
+  left: -50px;
+  font-weight: bold;
+}
+.funfact3 h2 {
+  color: white;
+  position: absolute;
+  top: -50px;
+  width: 200px;
+  left: -70px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.funfact3 sup {
+  color: #fbc50f;
+  position: absolute;
+  top: -75px;
+  font-size: 45px;
+  left: 50px;
+  font-weight: bold;
+}
+.funfact4 {
+  position: relative;
+
+  bottom: 300px;
+  left: 1050px;
+  width: 55px;
+}
+.funfact4 h1 {
+  color: #fbc50f;
+  position: absolute;
+  bottom: 80px;
+  font-size: 60px;
+  left: -20px;
+  font-weight: bold;
+}
+.funfact4 h2 {
+  color: white;
+  position: absolute;
+  top: -50px;
+  width: 150px;
+  left: -50px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.funfact4 sup {
+  color: #fbc50f;
+  position: absolute;
+  top: -75px;
+  font-size: 45px;
+  left: 50px;
+  font-weight: bold;
+}
+.funfact img:hover,
+.funfact3 img:hover,
+.funfact4 img:hover,
+.funfact2 img:hover {
+  animation: jump 0.6s ease;
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bannersec {
+  position: relative;
+  bottom: 150px;
+  height: 1000px;
+}
+.bannersec img {
+  position: absolute;
+}
+.bannersecdiv p {
+  color: #444;
+  font-family: "Sawarabi Mincho";
+  position: absolute;
+  top: 100px;
+  left: 520px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.bannersecdiv h2 {
+  color: black;
+  font-family: "Sawarabi Mincho";
+  position: absolute;
+  top: 130px;
+  letter-spacing: 2px;
+  left: 460px;
+  font-size: 50px;
+}
+.opentimesub {
+  position: absolute;
+  top: 230px;
+  left: 80px;
+  border: 1px solid #878787;
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  background-color: #fff;
+  height: 400px;
+  width: 260px;
+}
+.ci-sv1 svg {
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  left: -40px;
+  fill: #007d3a;
+}
+.opentimesub p {
+  position: absolute;
+  margin-top: 150px;
+  width: 200px;
+  color: black;
+
+  font-family: "Sawarabi Mincho";
+  left: 30px;
+}
+.opentimesub span {
+  position: absolute;
+  margin-top: 150px;
+  width: 200px;
+  color: black;
+
+  font-family: "Sawarabi Mincho";
+  left: 30px;
+}
+.opentime1 {
+  position: absolute;
+  left: 300px;
+}
+.bannersecmosque img {
+  position: relative;
+  bottom: 180px;
+  height: 620px;
+}
+.bannersecmosquegreen {
+  background-image: url(../assets/color-bg.jpg);
+  height: 600px;
+  width: 450px;
+  position: relative;
+  bottom: 1182.5px;
+  left: 750px;
+  border-bottom-left-radius: 250px;
+  border-bottom-right-radius: 250px;
+  background-color: black;
+}
+.quran-audio-playerouter {
+  width: 500px;
+  border: 3px solid #fbc50f;
+  border-radius: 10px;
+  left: 50px;
+  height: 150px;
+  background-color: white;
+  position: relative;
+  bottom: 600px;
+}
+.quran-audio-playerouter span {
+  font-size: 20px;
+  top: 20px;
+  position: absolute;
+  margin-left: 100px;
+}
+.quran-audio-player {
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  text-align: center;
+}
+.quran-audio-player audio {
+  width: 100%;
+  max-width: 400px;
+}
+
+.bannersecmosquegreen h1 {
+  position: absolute;
+  color: white;
+  top: 350px;
+  left: 150px;
+
+  font-size: 40px;
+
+  font-weight: bold;
+}
+.bannersecmosquegreen h2 {
+  position: absolute;
+  color: white;
+  width: 300px;
+  top: 60px;
+  left: 80px;
+  font-family: "Sawarabi Mincho";
+
+  font-size: 40px;
+
+  font-weight: bold;
+}
+/* dwedwe */
+.progress-circle {
+  position: relative;
+  top: 200px;
+  left: 150px;
+  width: 140px;
+  height: 140px;
+}
+
+.circle-svg {
+  transform: rotate(-90deg);
+  width: 140px;
+  height: 140px;
+}
+
+circle {
+  fill: none;
+  stroke-width: 8;
+}
+
+circle:nth-child(1) {
+  stroke: #fbc50f;
+}
+
+.progress {
+  stroke: #00aaff;
+  stroke-dasharray: 377;
+  stroke-dashoffset: 377;
+  transition: stroke-dashoffset 1.5s ease;
+}
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+.secondlast {
+  position: relative;
+  bottom: 1078px;
+}
+.secondlastimg {
+  margin-left: 612px;
+}
+.secondlastimg h2 {
+  color: #666;
+  font-family: "Sawarabi Mincho";
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: -70px;
+  text-transform: uppercase;
+}
+.secondlastimg h1 {
+  color: black;
+  font-family: "Sawarabi Mincho";
+  font-size: 40px;
+
+  margin-left: -110px;
+  text-transform: uppercase;
+}
+.scndmain img {
+  margin-left: 370px;
+  margin-top: 70px;
+  border-top-right-radius: 280px;
+  border-bottom-right-radius: 280px;
+  border-bottom-left-radius: 280px;
+}
+.scndmainlft img {
+  position: absolute;
+  top: 210px;
+  left: 100px;
+}
+.scndmainlft::before {
+  content: "";
+  position: absolute;
+  top: 210px;
+  width: 60px;
+  height: 60px;
+  background-color: #fbc50b;
+  opacity: 0.4;
+  border-radius: 50%;
+  z-index: -1;
+  left: 160px;
+}
+.scndmainrt1 img {
+  position: absolute;
+  top: 500px;
+  left: 960px;
+}
+.scndmainrt img {
+  position: absolute;
+  left: 950px;
+  bottom: 510px;
+}
+.scndmainlft1 img {
+  position: absolute;
+  top: 520px;
+  left: 100px;
+}
+.scndmainlft1:before {
+  content: "";
+  position: absolute;
+  top: 520px;
+  width: 60px;
+  height: 60px;
+  background-color: #fbc50b;
+  opacity: 0.4;
+  border-radius: 50%;
+  z-index: -1;
+  left: 155px;
+}
+.faplay {
+  cursor: pointer;
+  background: #fbc50b;
+  padding: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  border-radius: 50%;
+  z-index: 2;
+} 
+
+.lastsec1 p{
+  font-family: "Sawarabi Mincho";
+  position: absolute;
+  bottom: -100px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #444;
+  left: 170px;
+}
+.ayat img{
+  position: absolute;
+  bottom: -550px;
+  /* margin-left: 40px; */
+  left: 50px;
+  border: 3px solid #fbc50b;
+border-bottom-right-radius: 200px;
+border-top-left-radius: 200px;
+border-bottom-left-radius: 200px;
+  background-color: #fff7cd;
+  /* padding: 100px ; */
+  padding-bottom: 130px;
+  padding-top: 50px;
+  padding-left:80px ;
+  padding-right: 90px;
+}
+.ayat h2,h5{
+  position: absolute;
+  bottom: -490px;
+  font-size: 17px;
+  font-weight: bold;
+  left: 190px;
+  width: 300px;
+  /* top: 20px; */
+}
+.imgayat1{
+  border-top-left-radius:500px;
+  height: 450px;
+
+  margin-left: -20px;
+}
+.tarjumaimg img{
+
+  /* width: ; */
+
+  position: absolute;
+  left: 700px;
+  bottom: -750px;
+
+}
+.ayat h5{
+  text-align: center;
+  bottom: -530px;
+  background-color: #fbc50b;
+  font-size: 15px;
+  border-radius: 30px; 
+  padding: 5px;
+margin-left: 30px;
+  left: 190px;
+  width: 190px;
+  /* top: 20px; */
+}
+
+.lastsec1 h1{
+  position: absolute;
+  bottom: -230px;
+ align-items:center;
+  left: 170px;
+  width: 350px;
+  line-height: 60px;
+font-size: 45px ;
+  font-family: "Sawarabi Mincho";
+text-align: center;
+  color: black;
+
+}
+.scndmain {
+  position: relative;
+}
+
+.scndmain::after {
+  border: 3px solid #fbc50b;
+  width: 115px;
+  height: 115px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  content: "";
+  animation: video-button 5s infinite;
+}
+
+@keyframes video-button {
+  0% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+.scndmainrt1:before {
+  content: "";
+  position: absolute;
+  top: 490px;
+  width: 60px;
+  height: 60px;
+  background-color: #fbc50b;
+  opacity: 0.4;
+  border-radius: 50%;
+  z-index: -1;
+  left: 1020px;
+}
+.scndmainrt:before {
+  content: "";
+  position: absolute;
+  top: 170px;
+  width: 60px;
+  height: 60px;
+  background-color: #fbc50b;
+  opacity: 0.4;
+  border-radius: 50%;
+  z-index: -1;
+  left: 1000px;
+}
+.scndmainlft h1 {
+  position: absolute;
+  top: 330px;
+  font-size: 30px;
+  font-family: "Sawarabi Mincho";
+  left: 90px;
+}
+.scndmainrt h1 {
+  position: absolute;
+  top: 320px;
+  font-size: 30px;
+  font-family: "Sawarabi Mincho";
+  left: 950px;
+}
+.scndmainrt1 h1 {
+  position: absolute;
+  top: 620px;
+  font-size: 30px;
+  font-family: "Sawarabi Mincho";
+  left: 950px;
+}
+.scndmainlft1 h1 {
+  position: absolute;
+  top: 640px;
+  font-size: 30px;
+  font-family: "Sawarabi Mincho";
+  left: 90px;
+}
+.scndmainlft p {
+  position: absolute;
+  top: 380px;
+  color: #666;
+  line-height: 30px;
+  left: 90px;
+  width: 200px;
+}
+.scndmainrt p {
+  position: absolute;
+  top: 370px;
+  color: #666;
+  line-height: 30px;
+  left: 950px;
+  width: 200px;
+}
+.scndmainrt1 p {
+  position: absolute;
+  top: 670px;
+  color: #666;
+  line-height: 30px;
+  left: 950px;
+  width: 200px;
+}
+
+.scndmainlft1 p {
+  position: absolute;
+  top: 700px;
+  color: #666;
+  line-height: 30px;
+  left: 90px;
+  width: 200px;
+}
+.bannersecmosquegreen span {
+  position: absolute;
+  top: 410px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  left: 130px;
+}
+.mosquebtn1 {
+  background-color: #fbc50b;
+  color: #000;
+  padding: 18px 40px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  position: relative;
+  left: 140px;
+  top: 350px;
+  font-weight: bold;
+  overflow: visible;
+}
+.textflue h1 {
+  position: relative;
+  color: #fff;
+  font-family: "Sawarbi Mincho";
+  width: 300px;
+  font-size: 25px;
+
+  left: 50px;
+  top: -650px;
+}
+.textflue h2 {
+  position: relative;
+  color: #fff;
+  font-family: "Sawarbi Mincho";
+  width: 370px;
+  font-size: 45px;
+  line-height: 50px;
+
+  left: 50px;
+  top: -650px;
+  margin-bottom: 20px;
+}
+.textflue h3 {
+  position: relative;
+  color: #fff;
+
+  width: 500px;
+  font-size: 20px;
+
+  left: 50px;
+  top: -650px;
+}
+
+.opentimesub img {
+  width: 170px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.opentimesub a {
+  position: absolute;
+  top: 330px;
+  left: 70px;
+  height: 20px;
+  color: #000;
+}
+
+.opentimesub span {
+  position: absolute;
+  top: 140px;
+  font-size: 17px;
+  left: 30px;
+  color: #007d3a;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bannersecimg {
+  margin-left: 140px;
+  margin-top: 50px;
+}
+.bannersecdiv {
+  margin-left: 459.5px;
+}
